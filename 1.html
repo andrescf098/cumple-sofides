@@ -4,14 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>1</title>
+    <title>Sala de Pociones</title>
   </head>
   <body>
     <div class="blurred-box">
       <div class="user-login-box">
-        <div class="user-name">1</div>
-        <input class="user-password" type="text" />
+        <div class="user-name">La Sala de Pociones</div>
+        <span class="user-icon-pociones"></span>
+        <div class="user-name-1">
+          <p>¡Bienvenida a la Sala de Pociones!</p>
+          <br />
+          <p>
+            Encuentra los ingredientes para crear una pocion, los encontraras en
+            toda la habitacion, recuerda buscar bien. Luego de que encuentres
+            los ingredientes, dale a continuar.
+          </p>
+        </div>
+        <button class="user-password" type="submit" onclick="redirect()">
+          Continuar
+        </button>
       </div>
     </div>
   </body>
+  <script>
+    function redirect() {
+      window.location.href = 'instrucciones.html';
+    }
+  </script>
 </html>

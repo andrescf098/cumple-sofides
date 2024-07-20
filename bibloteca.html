@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Biblioteca</title>
+  </head>
+  <body>
+    <div class="blurred-box">
+      <div class="user-login-box">
+        <div class="user-name">La Biblioteca de Howarts</div>
+        <span class="user-icon-bibloteca"></span>
+        <form class="user-name-1" onsubmit="validacion()">
+          <p>¡Bienvenida a la Bibloteca de Howars!</p>
+          <br />
+          <p>
+            En esta habitación debes encontrar unas piezas que rompecabezas, con
+            ellas podras resolver el enigma de esta habitación.
+          </p>
+          <br />
+          <input id="respuesta" class="user-password" type="text" />
+          <button class="user-password" type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script>
+    function validacion() {
+      const respuestaCorrecta = 'ravenclaw';
+      const input = document.getElementById('respuesta').value;
+      if (input.toLowerCase() === respuestaCorrecta) {
+        alert(
+          'Respuesta correcta, ahora puedes avanzar a la siguiente habitación'
+        );
+      } else {
+        alert('Respuesta incorrecta, intenta de nuevo');
+      }
+    }
+  </script>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Instrucciones</title>
+  </head>
+  <style>
+    .titulo {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    ul {
+      list-style-type: none;
+    }
+    strong {
+        color: yellow;
+    }
+  </style>
+  <body>
+    <div class="blurred-box">
+      <div class="user-login-box">
+        <form class="user-name-1" onsubmit="validacion()">
+          <p class='titulo'>¡Vamos a crear una pocion multijugos!</p>
+          <br />
+          <p>
+            <p>Paso uno</p>
+            <br>
+            <ul>
+                <li>Agregue 3 medidas de <strong>Descurainia sophia al caldero</strong> (debe haberse recogido en una luna llena).</li>
+                <li>Agrega 2 paquetes de <strong>Centinodia</strong> al caldero.</li>
+                <li>Revuelve 4 veces, en el sentido de las agujas del reloj.</li>
+                <li>Agite su varita y deje que la poción se prepare durante 80 minutos (para un Caldero de peltre. Un Caldero de latón solo requerirá 68, y un Caldero de Cobre solo 60.)</li>
+            </ul>
+          </p>
+          <br />
+          <p>
+            <p>Paso dos</p>
+            <br>
+            <ul>
+                <li>Agrega 4 <strong>Sanguijuelas</strong> al caldero y un <strong>Gusajo</strong>.</li>
+                <li>Agregue 2 cucharadas de <strong>Crisopos</strong> en el mortero, triture hasta obtener una pasta fina, luego agregue 2 medidas de las alas de crisopo aplastadas al caldero.
+                </li>
+                <li>Calentar durante 30 segundos a fuego lento.</li>
+                <li>Agite su varita para completar esta etapa de la poción.</li>
+            </ul>
+          </p>
+          <br>
+          <p>
+            <p>Paso tres</p>
+            <br>
+            <ul>
+                <li>Agrega 3 medidas de <Strong>Piel de serpiente arbórea africana</Strong> al caldero.</li>
+                <li>Agregue el complemento salitre y una onza de <strong>Antimonio Crudo</strong> al caldero de la poción, tendrá una textura mercurial.</li>
+                <li>Agregue 1 medida de <strong>Cuerno de bicornio</strong> al mortero, triture sobre un polvo fino, luego agregue una medida del cuerno aplastado al caldero.</li>
+                <li>Calentar durante 20 segundos a alta temperatura.</li>
+                <li>Agite su varita y luego deje que la poción se prepare durante 24 horas (para un caldero de peltre. Un caldero de latón solo requerirá 1224 minutos, y el de cobre solo 18 horas).</li>
+            </ul>
+          </p>
+          <br>
+          <p>
+            <p>Paso cuatro</p>
+            <br>
+            <ul>
+                <li>Agrega 1 cucharada adicional de alas de crisopo al caldero.</li>
+                <li>Revuelva 3 veces, en sentido contrario a las agujas del reloj.</li>
+                <li>Divida la poción en dosis múltiples, si lo desea, luego agregue las <strong>Piezas de la persona</strong> que desea convertirse.</li>
+                <li>Agite su varita para completar la poción.</li>
+            </ul>
+          </p>
+          <br>
+          <input id="respuesta" class="user-password" type="text" />
+          <button class="user-password" type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script>
+    function validacion() {
+      const respuestaCorrecta = '453817269';
+      const input = document.getElementById('respuesta').value;
+      if (input === respuestaCorrecta) {
+        alert(
+          'Respuesta correcta, puedes avanzar a la siguiente habitación'
+        );
+      } else {
+        alert('Respuesta incorrecta, intenta de nuevo');
+      }
+    }
+  </script>
+</html>

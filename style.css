@@ -31,7 +31,7 @@ body {
 .blurred-box {
     position: relative;
     width: 250px;
-    height: 350px;
+    height: auto;
     top: calc(50% - 175px);
     left: calc(50% - 125px);
     background: inherit;
@@ -42,7 +42,7 @@ body {
 .blurred-box:after {
     content: '';
     width: 300px;
-    height: 300px;
+    height: auto;
     background: inherit;
     position: absolute;
     left: -25px;
@@ -59,8 +59,8 @@ body {
 /* Form which you dont need */
 .user-login-box {
     position: relative;
-    margin-top: 50px;
     text-align: center;
+    margin: 20px 0 20px 0;
     z-index: 1;
 }
 
@@ -69,26 +69,48 @@ body {
     width: 200px;
 }
 
-.user-icon {
+.user-icon-bibloteca {
     width: 100px;
     height: 100px;
     position: relative;
     border-radius: 50%;
-    background-size: contain;
-    background-image: url(https://pbs.twimg.com/profile_images/725321660484583424/ArQ4fM3k.jpg);
+    background-size: cover;
+    background-image: url('./img/biblioteca.jpg');
+}
+
+.user-icon-pociones {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 50%;
+    background-size: cover;
+    background-image: url('./img/sala-de-pociones.jpg');
 }
 
 .user-name {
     margin-top: 15px;
     margin-bottom: 15px;
+    font-weight: bold;
     color: white;
 }
 
-input.user-password {
+.user-name-1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.user-password {
+    background: gray;
     width: 120px;
-    height: 18px;
-    opacity: 0.4;
+    height: auto;
     border-radius: 2px;
-    padding: 5px 15px;
+    padding: 5px;
     border: 0;
+    color: white;
+}
+
+button.user-password {
+    width: 120px;
+    margin-top: 5px;
 }
