@@ -10,7 +10,7 @@ https://medium.com/@AmJustSam
 
 html {
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
 }
 
 /* CSS which you need for blurred box */
@@ -78,6 +78,15 @@ body {
     background-image: url('./img/biblioteca.jpg');
 }
 
+.user-icon-menesteres {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 50%;
+    background-size: cover;
+    background-image: url('./img/sala-de-los-menesteres.jpg');
+}
+
 .user-icon-pociones {
     width: 100px;
     height: 100px;
@@ -100,6 +109,13 @@ body {
     color: white;
 }
 
+.respuesta {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: white;
+
+}
+
 .user-password {
     background: gray;
     width: 120px;
@@ -112,5 +128,5 @@ body {
 
 button.user-password {
     width: 120px;
-    margin-top: 5px;
+    margin-top: 8px;
 }

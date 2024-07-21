@@ -4,28 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Prueba Biblioteca</title>
+    <title>Acertijo</title>
   </head>
   <body>
     <div class="blurred-box">
       <div class="user-login-box">
         <form class="user-name-1" onsubmit="validacion()">
-          <p class="titulo">Prueba de la Biblioteca</p>
+          <div class="user-name">Acertijo</div>
+          <p>
+            Entre páginas viejas y polvo me encuentro, Mi sabiduría a quien me
+            lea, ofrezco. Solo con una contraseña podrás entrar, A mis secretos
+            de magos y brujas conocerás.
+          </p>
           <br />
-          <input id="respuesta" class="user-password" type="text" />
-          <button class="user-password" type="submit">Enviar</button>
+          <div class="respuesta">
+            <input id="respuesta" class="user-password" type="text" />
+            <button class="user-password" type="submit">Enviar</button>
+          </div>
         </form>
       </div>
     </div>
   </body>
   <script>
     function validacion() {
-      const respuestaCorrecta = 'ravenclaw';
+      const respuestaCorrecta = 'sección prohibida';
       const input = document.getElementById('respuesta').value;
       if (input.toLowerCase() === respuestaCorrecta) {
-        alert(
-          'Respuesta correcta, ahora puedes avanzar a la siguiente habitación'
-        );
+        alert('Respuesta correcta, has superado las tres pruebas');
       } else {
         alert('Respuesta incorrecta, intenta de nuevo');
       }

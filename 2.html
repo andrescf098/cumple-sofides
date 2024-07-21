@@ -4,14 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Acertijo</title>
+    <title>Sala de los Menesteres</title>
   </head>
   <body>
     <div class="blurred-box">
       <div class="user-login-box">
-        <div class="user-name">Acertijo</div>
-        <input class="user-password" type="text" />
+        <div class="user-name">¡Bienvenida a la Sala de los Menesteres!</div>
+        <span class="user-icon-menesteres"></span>
+        <div class="user-name-1">
+          <p>
+            Esta es tu última prueba, debes de responder un acertijo para
+            finalmente encontrar tus regalos, si no sabes la respuesta puedes
+            pedir hasta un máximo de dos pistas. Cuando estes lista dale a
+            siguiente. ¡Buen suerte!
+          </p>
+          <br />
+        </div>
+        <button class="user-password" type="submit" onclick="redirect()">
+          Continuar
+        </button>
       </div>
     </div>
   </body>
+  <script>
+    function redirect() {
+      window.location.href = 'acertijo.html';
+    }
+  </script>
 </html>
